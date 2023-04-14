@@ -23,6 +23,26 @@ body {
   margin-top: 100px;
   padding: 30px 60px;
   box-sizing: border-box;
+
+  .result {
+    text-align: center;
+
+    h3 {
+      font-size: 24px;
+      letter-spacing: 1.4px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 500;
+
+      span {
+        color: $primary;
+        font-size: 22px;
+      }
+    }
+  }
 }
 
 .active-question-no {
@@ -68,5 +88,23 @@ ul {
     background: $primary;
     border: 1px solid $accent;
     color: $bg;
+  }
+}
+
+button {
+  background: linear-gradient(0deg,$primary 0.02% , $accent);
+  border-radius: 9px;
+  font-size: 18px;
+  color: $bg;
+  padding: 10px 42px;
+  outline: none;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  
+  &:disabled {
+    background: $bg-accent;
+    color: $disabled;
+    cursor: not-allowed;
   }
 }
